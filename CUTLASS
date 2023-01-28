@@ -1,0 +1,15 @@
+local SinglePlrs = game:GetService("ReplicatedStorage").Files.Remotes.SinglePlayers
+local plr = game.Players.LocalPlayer
+local itemSelect = "Weapon" -- Weapon | DevilFruit
+local itemName = "Cutlass Kaba" -- Ice-Ice | Flame-Flame | Smoke-Smoke | Dark Blade | Kiribachi | Cutlass Kaba | Ax Hand
+local args = {
+   [1] = {
+       ["Call"] = "InteractItem",
+       ["itemName"] = itemName,
+       ["itemIsa"] = itemSelect,
+       ["Type"] = "Equip",
+       ["itemId"] = 1
+   }
+}
+-- to unequip sword just do Type = Unequip
+SinglePlrs[game.Players.LocalPlayer.Name].Inventory:FireServer(unpack(args))
