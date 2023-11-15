@@ -8,3 +8,5 @@ u can make it urself. but yeah this is patched now
 PATCHED NOW
 PATCHED
 becuase people dont know how to read
+
+ill add a simple ui bc u shitters dont know how to do anything
